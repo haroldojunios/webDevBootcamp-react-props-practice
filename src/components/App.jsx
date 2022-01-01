@@ -8,6 +8,7 @@ function App() {
       <h1 className="heading">My Contacts</h1>
       {contacts.map((contact) =>
         <Card
+          key={contact.name}
           name={contact.name}
           img={contact.imgURL}
           tel={contact.phone}
